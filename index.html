@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hadiah Gratis Buat Kamu! 🎁</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffeaa7;
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 { color: #d63031; text-align: center; }
+        #btnPrank {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #00b894;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            position: absolute; /* Penting agar tombol bisa lari */
+            transition: 0.1s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Klik tombol di bawah untuk klaim Saldo Dana 1 Juta! 💸</h1>
+    <button id="btnPrank">Klaim Sekarang!</button>
+
+    <script>
+        const btn = document.getElementById('btnPrank');
+
+        // Fungsi membuat tombol lari saat didekati kursor
+        btn.addEventListener('mouseover', () => {
+            const x = Math.random() * (window.innerWidth - btn.clientWidth);
+            const y = Math.random() * (window.innerHeight - btn.clientHeight);
+
+            btn.style.left = `${x}px`;
+            btn.style.top = `${y}px`;
+        });
+
+        // Jika dia berhasil klik (sangat jarang), kasih pesan lucu
+        btn.addEventListener('click', () => {
+            alert("Wih, jago juga tangan lu! Tapi boong, gak ada saldo apa-apa. Semangat kerjanya! 😂");
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
